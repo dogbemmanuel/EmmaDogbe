@@ -154,4 +154,11 @@
 
 
 
+/*=================EXPERIENCE==================*/
+
+/*=================SERVICE ACCORDIAN=================*/
+.accordion .container.active .content {
+  height: 230px;
+}
+
 }
