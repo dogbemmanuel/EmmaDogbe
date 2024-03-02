@@ -44,23 +44,6 @@ function showSlides() {
 }
 
 
-// FLASHING OF WHAT WE DO AT THE ABOUT ME PAGE
-
-const textContainer = document.getElementById("textContainer");
-const texts = ["frontend?", "UI UX?", "website?", "editor?", "IT tutor"];
-
-let index = 0;
-
-function changeText() {
-  textContainer.textContent = texts[index];
-  index = (index + 1) % texts.length;
- }
-
-setInterval(changeText, 2000);
-
-
-
-
 
 // ACCORDIAN, IM USING THIS ONE
 const accordion = document.getElementsByClassName('container');
@@ -71,6 +54,19 @@ for (i=0; i<accordion.length; i++) {
   })
 }
 
+// FLASHING OF WHAT WE DO AT THE ABOUT ME PAGE
+
+const textContainer = document.getElementById("textContainer");
+const texts = ["frontend?", "UI UX?", "website?", "editor?", "IT tutor?"];
+
+let index = 0;
+
+function changeText() {
+  textContainer.textContent = texts[index];
+  index = (index + 1) % texts.length;
+ }
+
+setInterval(changeText, 2000);
 
 
 
@@ -142,10 +138,14 @@ for (i=0; i<accordion.length; i++) {
 
 // ======= SHOW / HIDE MENU ON MOBILE VIEWS =============
 // Toggle navigation menu on button click
+
+
 document.getElementById("navbar-toggle").addEventListener("click", function() {
   var navbarLinks = document.getElementById("navbar_links");
   navbarLinks.style.display === "flex" ? navbarLinks.style.display = "none" : navbarLinks.style.display = "flex";
 });
+
+
 
 // Hide navigation menu when screen is resized beyond the specified width
 window.addEventListener("resize", function() {

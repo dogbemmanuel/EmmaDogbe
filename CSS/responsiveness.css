@@ -24,25 +24,53 @@
   }
 
 
-/*======== MEDIA QUERY FOR NAVBAR ==========*/
+/*======== MEDIA QUERY FOR FOR IPAD ==========*/
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 835px) {
+
+
+  /* ============LANDING PAGE================== */
+
+
+  .landing_page{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+
+  /* ============LANDING PAGE LEFT================== */
+
+  .landingpage_left {
+    background-color: var(--primary-color);
+    position: relative;
+    /* display: inline-block; */
+    /* padding-top: 15%; */
+    /* border: none; */
+    z-index: 1;
+    /* transform: translateY(-180px); */
+    padding:  5% 5% !important;
+    width: auto;
+    
+  }
+
+
+  /* ============END OF LANDING PAGE LEFT================== */
 
 
   /* =============SOCIALS AND TEST================== */
-  /* ============LANDING PAGE LEFT================== */
+
 
 .socials_and_text{
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
+  margin-top: 0 !important;
 }
 
 
 .socials{
     display: inline;
-    margin-top: -2%;
 }
 
 .icons{
@@ -61,55 +89,100 @@
 
   /* ============LANDING PAGE RIGHT================== */
 
-.landingpage_right {
-  max-height: 80vh;
+.landingpage_right{
+  width: auto;
+  margin-bottom: -35%;
+  /* margin-bottom: auto; */
+  z-index:unset;
 }
 
-
-.navbar_links {
-    display: none;
-    flex-direction: column;
-    background-color: var(--primary-color);
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    padding-left: 80px;
-    padding-bottom: 100px;
-    line-height: 45px;
-    z-index: 1;
-    /* transition: all .9s ease-in-out; */
+#mobile_logo{
+  margin-left: 20px;
+  display: block;
+  float: left !important;
 }
 
-
-.dropdown-content a{
-    display: flex;
-    line-height: 25px;
-    flex-direction: column;
-    padding-left: 30px;
-    /* padding-left: 50px; */
-    text-align: start;
-    color: var(--grey_color);
-    font-size: var(--very-small-font-size);
-}
-
-
-/* Dropdown Content (Hidden by Default) */
-
-
-.navbar_links a {
-    margin-bottom: 10px;
-}
+  /* =============NAVBAR BACKROUND============ */
   
-.navbar-toggle {
+  .navbar {
+    height: 10vh;
+    right: 0;
+  }
+  
+  .img_and_animate {
+    margin: auto;
+    padding-right: 0;
+    top: 40%;
+  }
+
+  /* .mySlides{
+    margin-top: -30%;
+  } */
+
+  .scroll_down_arrow, .scroll_down, #logo{
+    display: none;
+  }
+
+  #dev_process{
+    display: none !important;
+  }
+  
+  .navbar_links {
+        display: none;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        padding-top: 100px;
+        padding-left: 80px;
+        height: 100vh;
+        position: fixed;
+        /* padding-bottom: 100px; */
+        line-height: 50px;
+        z-index: -5;
+        /* transition: all .9s ease-in-out; */
+  }
+  
+    .navbar_links a {
+      margin-bottom: 10px;
+    }
+  
+
+  
+  .dropdown-content a{
+      display: flex;
+      flex-direction: column;
+      padding-left: 30px;
+      line-height: 30px;
+      /* padding-left: 50px; */
+      text-align: start;
+      color: var(--grey_color);
+      font-size: var(--very-small-font-size);
+  }
+
+
+  .navbar-toggle {
+    font-size: 40px;
     display: block;
-}
+  }
 
-.img_and_animate{
+  /* =============NAVBAR BACKROUND============ */
+
+
+
+
+
+/*===============Dropdown Content (Hidden by Default)===================*/
+
+/* .img_and_animate{
   top: 50%;
+} */
+
+.img {
+  max-width: 70%;
 }
-
-
 
 .dot-container{
   padding-bottom: 5%;
@@ -130,35 +203,375 @@
 
   /* ============ABOUT ME SECTION================== */
 
-  .about_work_anima{
-    font-size: 3rem;
+  .about_work_anima, .text-animation{
+    font-size: 2.5rem;
   }
 
-  .text-animation{
-    font-size: 3rem;
-  }
 
-.vertical_line {
-  height: 730px;
-
+  .vertical_line {
+    height: 760px;
   }
 
 
 
 /* ===============ABILITIES================ */
+
 .abilities_list{
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Displaying three columns by default */
   gap: 10px;
+}
+.abiliti_icon{
+  font-size: 40px;
 }
 
 
 
 /*=================EXPERIENCE==================*/
 
+.work_flex{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0 !important;
+
+}
+.work_img{
+  margin: auto;
+  max-width: 100%;
+ }
+
+ .work_container{
+  padding-top: 10%;
+  margin: auto;
+  padding-left: 0% !important;
+ }
+
+
+/* ================COUNTER=================== */
+.counter_section, .counter_container{
+  height: 80vh;
+}
+
+.counter_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter_content{
+  padding-bottom: 3%;
+}
+
+
+.num_icon{
+  font-size: 30px;
+  padding: 30px;
+}
+
+
 /*=================SERVICE ACCORDIAN=================*/
+
 .accordion .container.active .content {
   height: 230px;
 }
 
+/* ===============CONTACT================= */
+
+.title-left, .title-right{
+  margin-bottom: 25px;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.lead{
+  font-size: 16px;
+}
+
+.email_whatsapp{
+  width: 90%;
+  display: block;
+}
+.contact_socials{
+  display: flex;
+  /* transform: translate(-10%, 46%); */
+}
+
+.contact_socials_icons{
+  font-size: 19px;
+  color: #1e1f41;
+  padding: 12px;
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+
+/* ===================FOOTER================= */
+
+  .footer{
+    height: 20vh;
+  }
+
+  .footer_brand{
+    display: none;
+  }
+  .footer_brand_ipad{
+    font-size: 1rem;
+    display: block;
+  }
+
+  .footer_container{
+    width: 100%;
+    padding: 0 2%;
+  }
+
+}
+
+
+
+/* =====================MIDIUM RESPONSIVENESS====================== */
+
+
+@media screen and (max-width: 768px) {
+  .navbar_links {
+    line-height: 40px;
+
+}
+  .vertical_line {
+    height: 800px;
+    }
+
+}
+
+
+
+/* =====================MOBILE RESPONSIVENESS====================== */
+
+@media screen and (max-width: 430px) {
+
+  .landing_page{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .landingpage_left {
+    background-color: var(--primary-color);
+    position: relative;
+    /* display: inline-block; */
+    /* padding-top: 15%; */
+    /* border: none; */
+    z-index: 2;
+    /* transform: translateY(-180px); */
+    width: 100%;
+    
+  }
+
+
+  #logo{
+    display: none;
+  }
+
+
+  .landingpage_right{
+    width: 100%;
+    margin-bottom: -50%;
+    z-index:unset
+  }
+
+  #mobile_logo{
+    display: block;
+    max-width:  40%;
+
+  }
+
+  .navbar {
+    height: 10vh;
+    }
+
+
+  .navbar_links {
+    width: 100%;
+    margin-top: 0;
+    top: 0;
+    position: fixed;
+    padding-top: 80px !important;
+    padding-left: 80px;
+    padding-bottom: 100px;
+    line-height: 25px;
+    /* z-index: 100; */
+  }
+
+  .dropdown-content a{
+    line-height: 25px;
+}
+
+
+
+  .navbar-toggle {
+    font-size: 30px;
+  }
+  
+  .img_and_animate {
+    margin: auto;
+    padding-right: 0;
+  }
+
+
+  .dot {
+    height: 10px;
+    width: 10px;
+  }
+
+  .scroll_down_arrow, .scroll_down{
+    display: none;
+  }
+
+  #dev_process{
+    display: none;
+  }
+
+
+
+
+
+/* =================ABOUT SECTION================= */
+.about_me_section{
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0 4%;
+}
+
+.me_img, .about_me_intro{
+  width: auto;
+  margin: auto;
+ 
+}
+
+.about_work_anima {
+  font-size: 2rem;
+}
+
+.text-animation {
+  font-size: 3rem;
+}
+
+/* ===============SKILLS=============== */
+
+  .skills_flex{
+    display: block;
+  }
+
+  .skills, .skill_items{
+    width: auto;
+
+  }
+
+  .skills_line{
+    display: none;
+  }
+
+
+  /*================WORK EXPERIENCE====================*/
+
+
+.experience_section{
+  margin: 10px;
+  padding: 4%;
+  box-shadow: 0 0 60px rgba(0,0,0,.4);
+}
+
+.work_flex{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.work_img{
+  width: auto;
+  position: relative;
+}
+
+.work_img:hover{
+  transform: none;
+ 
+}
+
+/* =================SERVICE=============== */
+
+.services_section{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: auto;
+}
+
+.service_info{
+  max-width: 100%;
+  padding-top: 5%;
+}
+
+/* .service_info{
+  width: 100%;
+} */
+
+
+/* .work_img:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), var(--primary-color));
+} */
+
+/* ================TESTIMONIALS============== */
+.test_items{
+  width: 90%;
+}
+.test_img{
+  width: 100px;
+  height: 100px;
+}
+
+/* =================CONTACT================= */
+
+.contact_section{
+  display: block;
+}
+
+.contact_info{
+  width: auto;
+  margin-top: 10%;
+}
+
+.contact_socials{
+ justify-content: center;
+}
+
+
+/* =================FOOTER================ */
+.footer{
+  height: 35vh;
+}
+
+
+.footer_brand_ipad{
+  font-size: 0.6rem;
+}
+
+.footer_container{
+  display: block;
+  text-align: center;
+}
+
+.flex_middle{
+  padding-bottom: 5%;
+  line-height: 65px;
+  justify-content: center;
+  text-align: center;
+}
 }
