@@ -141,7 +141,7 @@ setInterval(changeText, 2000);
 
 
 document.getElementById("navbar-toggle").addEventListener("click", function() {
-  var navbarLinks = document.getElementById("navbar_links");
+  let navbarLinks = document.getElementById("navbar_links");
   navbarLinks.style.display === "flex" ? navbarLinks.style.display = "none" : navbarLinks.style.display = "flex";
 });
 
@@ -149,8 +149,8 @@ document.getElementById("navbar-toggle").addEventListener("click", function() {
 
 // Hide navigation menu when screen is resized beyond the specified width
 window.addEventListener("resize", function() {
-  var navbarLinks = document.getElementById("navbar_links");
-  var screenWidth = window.innerWidth;
+  let navbarLinks = document.getElementById("navbar_links");
+  let screenWidth = window.innerWidth;
   if (screenWidth > 834) {
     navbarLinks.style.display = "flex";
   } else {
@@ -158,4 +158,11 @@ window.addEventListener("resize", function() {
   }
 });
 
+
 // Call resize event to hide or show navigation links upon page load
+
+
+
+
+
+

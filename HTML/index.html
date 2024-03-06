@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--CSS LINK FOR THE LANDING PAGE-->
-    <link rel="stylesheet" href="../CSS/landingpage.css" />
+    <link rel="stylesheet" href="../CSS/index.css" />
 
     <!-- ======== CSS RESPONSIVENESS LINK ======== -->
     <link rel="stylesheet" href="../CSS/responsiveness.css">
@@ -46,14 +46,21 @@
         <div class="socials_and_text">
           <div class="socials">
             <!--LINKEDIN ICON-->
-            <i class="fa-brands fa-linkedin icons" data-text="LinkedIn"></i>
+            <a href="#">
+              <i class="fa-brands fa-linkedin icons" data-text="LinkedIn">
+              </i></a>
             <!--GITHUB ICON-->
-            <i class="fa-brands fa-square-github icons" data-text="Githuh"></i>
+            <a href="https://github.com/emmadogbe">
+              <i class="fa-brands fa-square-github icons" data-text="Githuh">
+              </i></a>
+            
             <!--FACEBOOK ICON-->
-            <i
-              class="fa-brands fa-square-facebook icons"
-              data-text="Facebook"
-            ></i>
+            <a href="https://web.facebook.com/zabio.henandez" target="_blank">
+              <i
+                class="fa-brands fa-square-facebook icons"
+                data-text="Facebook"
+              ></i>
+            </a>
             <!--DRIBBBLE ICON-->
             <i
               class="fa-brands fa-square-dribbble icons"
@@ -211,14 +218,14 @@
             /></a>
           <div  class="navbar_links" id="navbar_links">
             <div class="dropdown about_me navbar_list">
-              <a href="#" class="white_text dropbtn"
+              <a href="./aboutMe.html" class="white_text dropbtn"
                 >About Me <i class="fa-solid fa-chevron-down about"></i
               ></a>
               <div class="dropdown-content">
-                <a href="#">About me & Bio</a>
-                <a href="#">Services</a>
-                <a href="#">Skils & experiences</a>
-                <a href="#">Lifestyle & Galary </a>
+                <a href="./aboutMe.html">About me & Bio</a>
+                <a href="./skillsExp.html">Skils & experiences</a>
+                <a href="#service">Services</a>
+                <a href="./lifeGalery.html">Lifestyle & Galary </a>
               </div>
             </div>
             <div class="dropdown portfolios navbar_list">
@@ -226,16 +233,16 @@
                 >Portfolio <i class="fa-solid fa-chevron-down Portfolio"></i
               ></a>
               <div class="dropdown-content">
-                <a href="#">Aproach to Projects</a>
-                <a href="#">Tools & Resources</a>
-                <a href="#">UI UX Projects</a>
-                <a href="#">Web Applications</a>
-                <a href="#">Flyers, Logos & Posters</a>
-                <a href="#">Write ups</a>
+                <a href="./aproach.html">Aproach to Projects</a>
+                <a href="./tools.html">Tools & Resources</a>
+                <a href="./uxProject.html">UI UX Projects</a>
+                <a href="./webProjects.html">Web Applications</a>
+                <a href="./flyers.html">Flyers, Logos & Posters</a>
+                <a href="./writeUps.html">Write ups</a>
               </div>
             </div>
   
-            <a href="#" class="white_text navbar_list">Let's Team Up</a>
+            <a href="#contact" class="white_text navbar_list">Let's Team Up</a>
             <a href="#" class="white_text navbar_list">Site Map</a>
           </div>
           <button class="navbar-toggle" id="navbar-toggle"><i class="fa-solid fa-bars"></i></button>
@@ -443,8 +450,8 @@
         <div class="skills_line">
           <span class="vertical_line"></span>
         </div>
-        <div class="skill_items" data-aos="fade-left" data-aos-duration="1000">
-          <div class="skills_title">
+        <div class="skill_items">
+          <div class="skills_title"  data-aos="fade-left" data-aos-duration="1100">
             <h3 class="white_text">Front End Development:</h3>
             <p class="grey_text">
               Description: As a frontend developer, I specialize in bringing
@@ -459,7 +466,7 @@
               data-aos-duration="1000"
             />
           </div>
-          <div class="skills_title">
+          <div class="skills_title"  data-aos="fade-right" data-aos-duration="1200">
             <h3 class="white_text">Web Developer & Designer:</h3>
             <p class="grey_text">
               I design visually appealing and user-friendly websites by blending
@@ -474,7 +481,7 @@
               data-aos-duration="1000"
             />
           </div>
-          <div class="skills_title">
+          <div class="skills_title"  data-aos="fade-left" data-aos-duration="1300">
             <h3 class="white_text">UI & UX Designer:</h3>
             <p class="grey_text">
               I craft seamless user experiences by combining my understanding of
@@ -489,7 +496,7 @@
               data-aos-duration="1000"
             />
           </div>
-          <div class="skills_title">
+          <div class="skills_title"  data-aos="fade-right" data-aos-duration="1400">
             <h3 class="white_text">GIT & GITHUB:</h3>
             <p class="grey_text">
               I use Git for version control and GitHub as a collaborative
@@ -510,7 +517,7 @@
 
     <!-- END OF SKILLS SECTION -->
 
-    <hr class="division" data-aos="fade-right" data-aos-duration="1000" />
+    <hr class="division" data-aos="fade-right" data-aos-duration="2000" />
 
     <section class="abilities_section">
       <div class="abilities_container">
@@ -527,101 +534,94 @@
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <i class="fa-solid fa-people-arrows abiliti_icon"></i>
+            <i class="fa-solid fa-people-group abiliti_icon"></i>
             <h3 class="abiliti_Name white_text">Team Player</h3>
-            <p class="abiliti_note grey_text">
+            <p class="abiliti_note">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Excepturi nihil quos, rem sequi reprehenderit ullam aliquam
-              adipisci laborum vel eum quas ab debitis nemo tenetur!
             </p>
           </div>
           <div
             class="abiliti_items"
             data-aos="fade-up"
-            data-aos-duration="1000"
+            data-aos-duration="1300"
           >
             <i class="fa-solid fa-people-arrows abiliti_icon"></i>
             <h3 class="abiliti_Name white_text">Communication</h3>
-            <p class="abiliti_note grey_text">
+            <p class="abiliti_note">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Excepturi nihil quos, rem sequi reprehenderit ullam aliquam
-              adipisci laborum vel eum quas ab debitis nemo tenetur!
             </p>
           </div>
           <div
             class="abiliti_items"
             data-aos="fade-up"
-            data-aos-duration="1000"
+            data-aos-duration="1600"
           >
-            <i class="fa-solid fa-people-arrows abiliti_icon"></i>
+            <i class="fa-solid fa-square-poll-vertical abiliti_icon"></i>
             <h3 class="abiliti_Name white_text">SEO</h3>
-            <p class="abiliti_note grey_text">
+            <p class="abiliti_note">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Excepturi nihil quos, rem sequi reprehenderit ullam aliquam
-              adipisci laborum vel eum quas ab debitis nemo tenetur!
             </p>
           </div>
           <div
             class="abiliti_items"
             data-aos="fade-up"
-            data-aos-duration="1000"
+            data-aos-duration="1900"
           >
-            <i class="fa-solid fa-people-arrows abiliti_icon"></i>
+            <i class="fa-brands fa-searchengin abiliti_icon"></i>
             <h3 class="abiliti_Name white_text">User Research</h3>
-            <p class="abiliti_note grey_text">
+            <p class="abiliti_note">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Excepturi nihil quos, rem sequi reprehenderit ullam aliquam
-              adipisci laborum vel eum quas ab debitis nemo tenetur!
             </p>
           </div>
           <div
             class="abiliti_items"
             data-aos="fade-up"
-            data-aos-duration="1000"
+            data-aos-duration="2200"
           >
-            <i class="fa-solid fa-people-arrows abiliti_icon"></i>
-            <h3 class="abiliti_Name white_text">Team Player</h3>
-            <p class="abiliti_note grey_text">
+            <i class="fa-solid fa-square-check abiliti_icon"></i>
+            <h3 class="abiliti_Name white_text">Usability Testing</h3>
+            <p class="abiliti_note">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Excepturi nihil quos, rem sequi reprehenderit ullam aliquam
-              adipisci laborum vel eum quas ab debitis nemo tenetur!
             </p>
           </div>
           <div
             class="abiliti_items"
             data-aos="fade-up"
-            data-aos-duration="1000"
+            data-aos-duration="2500"
           >
             <i class="fa-solid fa-people-arrows abiliti_icon"></i>
             <h3 class="abiliti_Name white_text">Team Player</h3>
-            <p class="abiliti_note grey_text">
+            <p class="abiliti_note">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Excepturi nihil quos, rem sequi reprehenderit ullam aliquam
-              adipisci laborum vel eum quas ab debitis nemo tenetur!
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <hr class="division" data-aos="fade-right" data-aos-duration="1000" />
+    <hr class="division" data-aos="fade-right" data-aos-duration="2000" />
 
     <section class="experience_section">
       <div class="work_hearding">
         <h3 class="green_text">WORK EXPERIENCE</h3>
         <span class="white_text abilitiDots"
-          >........<i class="fa-solid fa-chevron-down abilit_arrow_down"></i
-          >..........</span
+          >.......<i class="fa-solid fa-chevron-down abilit_arrow_down"></i
+          >.........</span
         >
       </div>
       <div class="work_flex">
         <div class="work_container">
           <div class="work-experience">
             <div class="work-info">
-              <i class="fa-solid fa-people-arrows work-icon"></i>
-              <h3 class="green_text">Job Title 1</h3>
-              <p class="white_text">Company Name 1</p>
-              <p class="grey_text">Date 1</p>
+              <h3 class="green_text">FrontEnd Developer</h3>
+              <p class="white_text">CodeWeb Company Limited</p>
+              <p class="grey_text">2022</p>
               <p class="grey_text">
                 Description of job responsibilities and achievements <a href="#" class="green_text">read more on my job descriptions</a>.
               </p>
@@ -630,22 +630,9 @@
 
           <div class="work-experience">
             <div class="work-info">
-              <i class="fa-solid fa-people-arrows work-icon"></i>
-              <h3 class="green_text">Job Title 2</h3>
-              <p class="white_text">Company Name 2</p>
-              <p class="grey_text">Date 2</p>
-              <p class="grey_text">
-                Description of job responsibilities and achievements <a href="#" class="green_text">read more on my job descriptions</a>.
-              </p>
-            </div>
-          </div>
-
-          <div class="work-experience">
-            <i class="fa-solid fa-people-arrows work-icon"></i>
-            <div class="work-info">
-              <h3 class="green_text">Job Title 3</h3>
-              <p class="white_text">Company Name 3</p>
-              <p class="grey_text">Date 3</p>
+              <h3 class="green_text">Marketer</h3>
+              <p class="white_text">CodeWeb Company Limited</p>
+              <p class="grey_text">2022</p>
               <p class="grey_text">
                 Description of job responsibilities and achievements <a href="#" class="green_text">read more on my job descriptions</a>.
               </p>
@@ -654,15 +641,25 @@
 
           <div class="work-experience">
             <div class="work-info">
-              <i class="fa-solid fa-people-arrows work-icon"></i>
-              <h3 class="green_text">Job Title 4</h3>
-              <p class="white_text">Company Name 4</p>
-              <p class="grey_text">Date 4</p>
+              <h3 class="green_text">UI Designer</h3>
+              <p class="white_text">Freelancer</p>
+              <p class="grey_text">2021</p>
               <p class="grey_text">
                 Description of job responsibilities and achievements <a href="#" class="green_text">read more on my job descriptions</a>.
               </p>
             </div>
           </div>
+
+          <div class="work-experience">
+            <div class="work-info">
+              <h3 class="green_text">Baber</h3>
+              <p class="white_text">Star Plus Babering Shop</p>
+              <p class="grey_text">2017</p>
+              <p class="grey_text">
+                Description of job responsibilities and achievements <a href="#" class="green_text">read more on my job descriptions</a>.
+              </p>
+            </div>
+          </div>;
         </div>
         <div class="work_img_container" data-aos="zoom-in-up" data-aos-duration="1000">
           <img
@@ -683,26 +680,22 @@
           data-aos="fade-right"
           data-aos-duration="1000"
         >
-          <i class="fa-solid fa-people-arrows num_icon"></i><br /><br />
+          <i class="fa-solid fa-chart-simple num_icon"></i><br /><br />
           <h2 class="numbers white_text">17+</h2>
           <p class="white_text">WORKS COMPLETED</p>
         </div>
-        <div class="counter_content">
-          <i
-            class="fa-solid fa-people-arrows num_icon"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          ></i
-          ><br /><br />
+        <div class="counter_content" 
+          data-aos="fade-up"
+          data-aos-duration="1000">
+          <i class="fa-solid fa-medal num_icon"></i>
+          <br /><br />
           <h2 class="numbers white_text">2+</h2>
           <p class="white_text">NUMBER OF YEARS</p>
         </div>
-        <div class="counter_content">
-          <i
-            class="fa-solid fa-people-arrows num_icon"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-          ></i
+        <div class="counter_content"             
+          data-aos="fade-left"
+          data-aos-duration="1000">
+          <i class="fa-solid fa-hashtag num_icon"></i
           ><br /><br />
           <h3 class="numbers white_text">13+</h3>
           <p class="white_text">NUMBER OF CLIENTS</p>
@@ -852,9 +845,9 @@
       </div>
     </section>
 
-    <hr class="division" data-aos="fade-right" data-aos-duration="1000" />
+    <hr class="division" data-aos="fade-right" data-aos-duration="2000" />
 
-    <section class="services_section">
+    <section id="service" class="services_section">
       <div class="service_header">
         <div class="service_title white_text">Services:</div>
         <p class="grey_text">
@@ -1050,11 +1043,11 @@
 
      <!-- ======= Footer ======= -->
     <footer id="footer">
-      <hr class="division" data-aos="fade-right" data-aos-duration="1000" />
+      <hr class="division" data-aos="fade-right" data-aos-duration="2000" />
       <div class="footer">
         <div class="footer_container">
           <div class="footer_brand">
-            <h1 class="green_text">DOGBEtech</h1>
+            <a href="#home"><h1 class="green_text">DOGBEtech</h1></a>
           </div>
           <!-- VERTICAL LINE AT FOOTER -->
           <div class="flex_middle">

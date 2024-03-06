@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS LINK FOR THE LANDING PAGE-->
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <link rel="stylesheet" href="../CSS/otherPage.css" />
+
+    <!-- ======== CSS RESPONSIVENESS LINK ======== -->
+    <link rel="stylesheet" href="../CSS/responsiveness.css" />
+
+    <!-- FONT AWESOME ICON -->
+    <script
+      src="https://kit.fontawesome.com/ec8793e2c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- ANIMATE ON SCROLL CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- PAGE TITLE -->
+    <title>EmmaDogbe</title>
+  </head>
+  <body>
+    <!-- NAVBAR SECTION STARTS HERE -->
+    <header class="about_landingPage">
+      <nav class="othePageNavbar" id="othePageNavbar">
+        <a href="./index.html">
+          <img
+            src="../Static_files/Images/DogbetechLogoAI1.svg"
+            alt="DT logo"
+            id="other_logo"
+            height="120px"
+            width="120px"
+        /></a>
+
+        <a href="./index.html">
+          <img
+            src="../Static_files/Images/DogbetechLogoAI1.svg"
+            alt="DT logo"
+            id="other_logo_bs"
+            height="120px"
+            width="120px"
+        /></a>
+        <div class="otherPageNavbar_links" id="otherPageNavbar_links">
+          <div class="dropdown about_me navbar_list">
+            <a href="#" class="white_text dropbtn"
+              >About Me <i class="fa-solid fa-chevron-down about"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="./aboutMe.html">About me & Bio</a>
+              <a href="./skillsExp.html">Skils & experiences</a>
+              <a href="#service">Services</a>
+              <a href="./lifeGalery.html">Lifestyle & Galary </a>
+            </div>
+          </div>
+          <div class="dropdown portfolios navbar_list">
+            <a href="#" class="white_text"
+              >Portfolio <i class="fa-solid fa-chevron-down Portfolio"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="./aproach.html">Aproach to Projects</a>
+              <a href="./tools.html">Tools & Resources</a>
+              <a href="./uxProject.html">UI UX Projects</a>
+              <a href="./webProjects.html">Web Applications</a>
+              <a href="./flyers.html">Flyers, Logos & Posters</a>
+              <a href="./writeUps.html">Write ups</a>
+            </div>
+          </div>
+
+          <a href="#contact" class="white_text navbar_list">Let's Team Up</a>
+          <a href="#" class="white_text navbar_list">Site Map</a>
+        </div>
+        <button class="navbar-toggle" id="otherPagenavbarToggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+    <a href="#home" class="scroll_up"
+        ><img
+          src="../Static_files/Images/scrollUp.png"
+          alt="arrow up"
+          height="50"
+          width="40"
+          class="up"
+    /></a>
+
+
+
+    <section class="aboutPage">
+      <div class="aboutmePage">Hello <br>
+        If the navbar toggle is working on the home page but not on the about page, there could be several reasons for this issue. Here are a few potential causes to investigate:
+
+JavaScript Conflicts: Check for any JavaScript errors in the browser console that might be preventing the toggle functionality from working on the about page. Make sure that there are no conflicting JavaScript functions or libraries being loaded that could interfere with the toggle functionality.
+
+HTML Structure: Ensure that the HTML structure of the navbar toggle and the associated JavaScript code is consistent on both the home page and the about page. There might be differences in the HTML structure or class names that are preventing the toggle from functioning properly on the about page.
+
+CSS Styling: Verify that the CSS styles applied to the navbar toggle are consistent across both pages. Sometimes, conflicting CSS styles or missing styles could cause the toggle to appear broken or non-functional on certain pages.
+
+Page Loading Issues: Check if all the necessary JavaScript and CSS files are properly loaded on the about page. Sometimes, if a file fails to load or is loaded out of order, it can affect the functionality of components on the page, including the navbar toggle.
+
+Conditional Logic: If the navbar toggle functionality is implemented using JavaScript with conditional logic based on the current page URL, ensure that the logic is correctly implemented and that it properly identifies the about page.
+
+Event Binding: Double-check that the event binding for the navbar toggle is correctly set up on the about page. If the event is not properly bound or if there are any issues with event delegation, it could prevent the toggle from working as expected.
+
+By thoroughly investigating these potential causes, you should be able to identify and resolve the issue with the navbar toggle not working on the about page.
+
+User
+These are the errors.
+A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
+ChatGPT
+
+The error message you provided suggests that there might be an issue with asynchronous event handling or communication between different parts of your code. Here are a few steps you can take to address this problem:
+
+Check Event Listeners: Review the code that handles the navbar toggle functionality and ensure that event listeners are properly set up. Make sure that the event listeners are added after the DOM has fully loaded to avoid any issues with accessing DOM elements that haven't been created yet.
+
+Asynchronous Requests: If your navbar toggle functionality involves making asynchronous requests (e.g., AJAX calls), ensure that the requests are properly handled and that appropriate error handling is implemented to deal with any issues that may arise during the request process.
+
+Debugging Tools: Utilize browser developer tools (such as Chrome DevTools or Firefox Developer Tools) to debug your JavaScript code. Use breakpoints, console logging, and other debugging techniques to trace the flow of execution and identify any potential issues with asynchronous operations.
+
+Cross-Origin Requests: If your code involves making cross-origin requests (requests to a different domain), ensure that the server's CORS (Cross-Origin Resource Sharing) policy allows the requests to be made from your web page. Check the browser's console for any CORS-related errors that may be causing the issue.
+
+Testing Environment: Make sure that your code is running in a consistent and stable environment. Test your code on different browsers and devices to see if the issue is specific to certain environments.
+
+By following these steps and carefully examining your code, you should be able to identify and resolve the issue with the asynchronous response error.
+
+
+
+
+
+      </div>
+    </section>
+
+
+
+    <section id="contact" class="contact_section">
+      <div class="contact_left" data-aos="fade-up" data-aos-duration="1000">
+        <h3 class="title-left">Send Message Us</h3>
+        <form
+          id="my-form"
+          action="https://formspree.io/f/mgegkjpv"
+          method="POST"
+          class="contact_form"
+        >
+          <div class="form-group">
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              id="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              id="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              name="message"
+              rows="5"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+          <!-- <div class="col-md-12 text-center my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div> -->
+          <div class="email_whatsapp">
+            <div class="contact_button">
+              <button
+                type="submit"
+                id="my-form-button"
+                class="contact_submit_button"
+              >
+                submit
+              </button>
+            </div>
+            <div class="WhatsApp_button">
+              <a
+                href="https://wa.me/233559193660"
+                target="_blank"
+                class="whatsapp_submit_button"
+              >
+                Contact via WhatsApp
+              </a>
+            </div>
+          </div>
+          <p id="my-form-status"></p>
+        </form>
+      </div>
+
+      <div class="contact_info" data-aos="fade-up" data-aos-duration="1000">
+        <div class="contact_right">
+          <h3 class="title-right">Get in Touch</h3>
+        </div>
+        <div class="more-info">
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            dolorum dolorem soluta quidem expedita aperiam aliquid at. Totam
+            magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
+            mollitia inventore?
+          </p>
+          <ul class="list-ico">
+            <li>
+              <i class="fa-regular fa-compass"></i>&nbsp; &nbsp; Banana Inn
+              Mamprobi, Accra, Ghana
+            </li>
+            <li>
+              <i class="fa-regular fa-id-badge"></i>&nbsp; &nbsp; (+233)
+              55-919-3660
+            </li>
+            <li>
+              <i class="fa-regular fa-paper-plane"></i>&nbsp;&nbsp;
+              dogbemanuel@gmail.com
+            </li>
+            <li class="days">Monday - Friday:</li>
+          </ul>
+        </div>
+        <div class="contact_socials">
+          <i class="fa-brands fa-linkedin contact_socials_icons"></i>
+          <!--GITHUB ICON-->
+          <i class="fa-brands fa-square-github contact_socials_icons"></i>
+          <!--FACEBOOK ICON-->
+          <i class="fa-brands fa-square-facebook contact_socials_icons"></i>
+          <!--DRIBBBLE ICON-->
+          <i class="fa-brands fa-square-dribbble contact_socials_icons"></i>
+          <!--INSTAGRAM ICON-->
+          <i class="fa-brands fa-square-instagram contact_socials_icons"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Contact Section -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <hr class="division" data-aos="fade-right" data-aos-duration="2000" />
+      <div class="footer">
+        <div class="footer_container">
+          <div class="footer_brand">
+            <a href="./index.html"><h1 class="green_text">DOGBEtech</h1></a>
+          </div>
+          <!-- VERTICAL LINE AT FOOTER -->
+          <div class="flex_middle">
+            <div class="footer_terms">
+              <a href="#" class="grey_text foote_link">About Us</a>
+              <span class="green_text">|</span>
+            </div>
+
+            <div class="footer_terms">
+              <a href="#" class="grey_text foote_link">About Us</a>
+              <span class="green_text">|</span>
+            </div>
+            <div class="footer_terms">
+              <a href="#" class="grey_text foote_link">About Us</a>
+            </div>
+          </div>
+
+          <div class="footer_righti">
+            <div class="footer_links_flex">
+              <a href="#" class="grey_text foote_link">About Us</a>
+              <a href="#" class="grey_text foote_link">Portfolio</a>
+              <a href="#" class="grey_text">Experience</a>
+            </div>
+            <div class="footer_links_flex">
+              <a href="#" class="grey_text foote_link">Policy</a>
+              <a href="#" class="grey_text foote_link">Careers</a>
+              <a href="#" class="grey_text foote_link">Terms</a>
+            </div>
+            <div class="footer_links_flex">
+              <a href="#" class="grey_text foote_link">Meet Team Members</a>
+              <a href="#" class="grey_text foote_link">View Map</a>
+              <a href="#" class="grey_text foote_link">Clients</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="credits">
+        <div class="footer_brand_ipad">
+          <h1 class="green_text">DOGBEtech</h1>
+        </div>
+        <p class="copyright white_text">
+          &copy; Copyright <strong>DOGBEtech</strong>. All Rights Reserved
+        </p>
+        <p class="white_text">
+          Developed by
+          <a href="dogbedblkdd" class="green_text">Emmanuel Dogbe</a>
+        </p>
+      </div>
+    </footer>
+    <!-- End  Footer -->
+
+    <!-- JAVASCRIPT LINK -->
+    <script src="../JS/interact.js"></script>
+    <script src="../JS/other.js"></script>
+
+    <!-- JQUERY LINK -->
+    <script src="../JQuery/jsquery.js"></script>
+
+    <!-- ANIMATE ON SCROLL CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- SWIPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
