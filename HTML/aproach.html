@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../CSS/otherPage.css" />
 
     <!-- ======== CSS RESPONSIVENESS LINK ======== -->
-    <link rel="stylesheet" href="../CSS/responsiveness.css" />
+    <link rel="stylesheet" href="../CSS/tabletresponsive.css">
+    <link rel="stylesheet" href="../CSS/mobileresponsive.css">
 
     <!-- FONT AWESOME ICON -->
     <script
@@ -31,9 +32,9 @@
     <!-- PAGE TITLE -->
     <title>EmmaDogbe</title>
   </head>
-  <body>
+  <body class="experienceBody">
     <!-- NAVBAR SECTION STARTS HERE -->
-    <header class="about_landingPage">
+    <header class="about_landingPage" id="home">
       <nav class="othePageNavbar" id="othePageNavbar">
         <a href="./index.html">
           <img
@@ -59,15 +60,13 @@
             ></a>
             <div class="dropdown-content">
               <a href="./aboutMe.html">About me & Bio</a>
-              <a href="./skillsExp.html">Skils & experiences</a>
+              <a href="./Experience.html">Experiences</a>
               <a href="#service">Services</a>
               <a href="./lifeGalery.html">Lifestyle & Galary </a>
             </div>
           </div>
           <div class="dropdown portfolios navbar_list">
-            <a href="#" class="white_text"
-              >Portfolio <i class="fa-solid fa-chevron-down Portfolio"></i
-            ></a>
+            <a href="#" class="white_text"><button class="prtfo">Portfolio</button><i class="fa-solid fa-chevron-down Portfolio"></i></a>
             <div class="dropdown-content">
               <a href="./aproach.html">Aproach to Projects</a>
               <a href="./tools.html">Tools & Resources</a>
@@ -95,49 +94,170 @@
           class="up"
     /></a>
 
+    <section class="expContainer">
+      <div class="expeLandingPage">
+        <div class="approachvid"></div>
+        <video autoplay muted loop class="expVideo" >
+          <source src="/Static_files/Videos/approach.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="pageTitleforApproach">
+          <h1><STrong class="white_text">MY APPROACH TO DIFFERENT TYPES OF PROJECTS</STrong></h1>
+          <br>
+          <a href="#approach2" class="white_text"><button class="pulseBtn">UI UX</button></a>&nbsp;||
+          <a href="#approach1" class="white_text"><button class="pulseBtn">FrontEnd</button></a>
+          <br><br>
+          <P class="white_text">Home >>>>> Approach</P>
+        </div>
+      </div>
+    </section>
+
+    <section class="contentForApproach">
+      <div id="approach1">
+        <div class="approachContainer">
+          <h1 class="approachFront">
+            A Systematic Approach to Frontend Development
+          </h1>
+          <p>
+            In the dynamic realm of <strong>frontend development</strong>, 
+            tackling a project efficiently and effectively 
+            requires a structured approach. Whether it's building 
+            a website, crafting a user interface, or optimizing user 
+            experience, a systematic methodology can streamline the process 
+            and enhance outcomes.
+          </p>
+        </div>
+        <h2>Here's my approach to getting the job done:</h2>
+        <div class="approachSteps">
+          <p>
+            <strong>Understanding Requirements</strong>: Begin by thoroughly comprehending the project requirements. 
+            Communicate with stakeholders to gather insights into the objectives, target audience, 
+            functionalities, and design preferences.
+          </p>
+          <br>
+          <p>
+            <strong>Research and Analysis</strong>: Conduct in-depth research on industry trends, 
+            competitors, and best practices. Analyze similar projects to identify successful strategies and potential 
+            pitfalls to avoid.
+          </p>
+          <br>
+          <p>
+            <strong>Wireframing and Prototyping</strong>: Create wireframes and prototypes 
+            to visualize the layout, structure, and user flow. This step serves as a blueprint for the development 
+            process and facilitates collaboration with designers and stakeholders.
+          </p>
+          <br>
+          <p>
+            <strong>Selecting the Right Tools and Technologies</strong>: Evaluate available 
+            tools and technologies based on project requirements, scalability, performance, and compatibility. Choose 
+            frameworks, libraries, and development environments that align with the project goals and team expertise.
+          </p>
+            <p>
+              <strong>Setting Up the Development Environment</strong>: Establish a robust development environment with proper version 
+              control, project management tools, and collaboration platforms. Ensure seamless integration between frontend 
+              and backend systems for efficient data exchange.
+            </p>
+            <br>
+            <p>
+              <strong>Coding with Best Practices</strong>: Adhere to coding standards, guidelines, and best practices to ensure code 
+              readability, maintainability, and scalability. Utilize modular design principles, semantic HTML, CSS pre-processors, 
+              and JavaScript frameworks to streamline development.
+            </p>
+            <br>
+            <p>
+              <strong>Testing and Quality Assurance</strong>: Implement rigorous testing protocols to identify and rectify bugs, errors, 
+              and inconsistencies. Conduct unit tests, integration tests, and user acceptance tests to validate functionality and 
+              user experience across different devices and browsers.
+            </p>
+            <br>
+            <p>
+              <strong>Optimization and Performance Tuning</strong>: Optimize frontend assets, including images, scripts, and stylesheets, 
+              to improve loading speed and responsiveness. Employ techniques like minification, compression, lazy loading, and 
+              caching to enhance performance.
+            </p>
+            <br>
+            <p>
+              <strong>Accessibility and Cross-Browser Compatibility</strong>: Ensure accessibility compliance by following WCAG guidelines 
+              and integrating assistive technologies. Test the website or application across multiple browsers and devices to 
+              guarantee seamless functionality and consistency.
+            </p>
+            <br>
+            <p>
+              <strong>Deployment and Maintenance</strong>: Deploy the finalized frontend solution to production servers using secure and 
+              efficient deployment pipelines. Implement monitoring and analytics tools to track performance metrics, user 
+              interactions, and potential issues post-deployment. Regularly update and maintain the frontend codebase to 
+              address security vulnerabilities and incorporate new features or improvements.
+            </p>
+            <br>
+          </div>
+          <p>
+            By following this systematic approach, frontend developers can effectively navigate the complexities of 
+            project development, deliver high-quality solutions, and contribute to positive user experiences. 
+            Continuous learning, adaptation, and collaboration are essential to staying ahead in the ever-evolving 
+            landscape of frontend development.
+          </p>
+      </div>
 
 
-    <section class="aboutPage">
-      <div class="aboutmePage">Hello <br>
-        If the navbar toggle is working on the home page but not on the about page, there could be several reasons for this issue. Here are a few potential causes to investigate:
+      <div class="wrapper nine">
+        <div>
+            <h3 class="rotate">
+                <span>U</span>
+                <span>I</span>
+                <span>&nbsp;</span>
+                <span>U</span>
+                <span>X</span>
+                <span>&nbsp;</span>
+                <span>D</span>
+                <span>E</span>
+                <span>S</span>
+                <span>I</span>
+                <span>G</span>
+                <span>N</span>
+                <span>&nbsp;</span>
+                <span>N</span>
+                <span>E</span>
+                <span>X</span>
+                <span>T</span>
+            </h3>
+        </div>
+      </div>
 
-JavaScript Conflicts: Check for any JavaScript errors in the browser console that might be preventing the toggle functionality from working on the about page. Make sure that there are no conflicting JavaScript functions or libraries being loaded that could interfere with the toggle functionality.
-
-HTML Structure: Ensure that the HTML structure of the navbar toggle and the associated JavaScript code is consistent on both the home page and the about page. There might be differences in the HTML structure or class names that are preventing the toggle from functioning properly on the about page.
-
-CSS Styling: Verify that the CSS styles applied to the navbar toggle are consistent across both pages. Sometimes, conflicting CSS styles or missing styles could cause the toggle to appear broken or non-functional on certain pages.
-
-Page Loading Issues: Check if all the necessary JavaScript and CSS files are properly loaded on the about page. Sometimes, if a file fails to load or is loaded out of order, it can affect the functionality of components on the page, including the navbar toggle.
-
-Conditional Logic: If the navbar toggle functionality is implemented using JavaScript with conditional logic based on the current page URL, ensure that the logic is correctly implemented and that it properly identifies the about page.
-
-Event Binding: Double-check that the event binding for the navbar toggle is correctly set up on the about page. If the event is not properly bound or if there are any issues with event delegation, it could prevent the toggle from working as expected.
-
-By thoroughly investigating these potential causes, you should be able to identify and resolve the issue with the navbar toggle not working on the about page.
-
-User
-These are the errors.
-A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
-ChatGPT
-
-The error message you provided suggests that there might be an issue with asynchronous event handling or communication between different parts of your code. Here are a few steps you can take to address this problem:
-
-Check Event Listeners: Review the code that handles the navbar toggle functionality and ensure that event listeners are properly set up. Make sure that the event listeners are added after the DOM has fully loaded to avoid any issues with accessing DOM elements that haven't been created yet.
-
-Asynchronous Requests: If your navbar toggle functionality involves making asynchronous requests (e.g., AJAX calls), ensure that the requests are properly handled and that appropriate error handling is implemented to deal with any issues that may arise during the request process.
-
-Debugging Tools: Utilize browser developer tools (such as Chrome DevTools or Firefox Developer Tools) to debug your JavaScript code. Use breakpoints, console logging, and other debugging techniques to trace the flow of execution and identify any potential issues with asynchronous operations.
-
-Cross-Origin Requests: If your code involves making cross-origin requests (requests to a different domain), ensure that the server's CORS (Cross-Origin Resource Sharing) policy allows the requests to be made from your web page. Check the browser's console for any CORS-related errors that may be causing the issue.
-
-Testing Environment: Make sure that your code is running in a consistent and stable environment. Test your code on different browsers and devices to see if the issue is specific to certain environments.
-
-By following these steps and carefully examining your code, you should be able to identify and resolve the issue with the asynchronous response error.
-
-
-
-
-
+      <div id="approach2">
+        <div class="approachContainer">
+          <p>
+            Creating compelling <strong>User Interface (UI) and User Experience (UX) 
+              designs</strong> requires a systematic approach that prioritizes user needs, 
+            usability, and aesthetic appeal.
+          </p>
+          <h1>
+            A Strategic Methodology for UI/UX Design
+          </h1>
+        </div>
+        <h2>Here's how I tackle UI/UX projects:</h2>
+        <div class="approachSteps">
+          <p><strong>User Research</strong>: Initiate the process by conducting thorough user research to understand the target audience, their behaviors, preferences, and pain points. Utilize techniques such as surveys, interviews, and user personas to gather insights.</p>
+          <br>
+          <p><strong>Competitor Analysis</strong>: Analyze competitors' UI/UX designs to identify strengths, weaknesses, and opportunities for differentiation. This analysis helps in crafting unique and competitive designs tailored to the target market.</p>
+          <br>
+          <p><strong>Wireframing and Prototyping</strong>: Develop wireframes and prototypes to visualize the layout, navigation, and interactions. These prototypes serve as a blueprint for the design process and facilitate feedback from stakeholders and usability testing.</p>
+          <br>
+          <p><strong>Information Architecture</strong>: Define the information architecture by organizing content in a logical and intuitive manner. Design a clear hierarchy, navigation structure, and labeling system to enhance usability and accessibility.</p>
+          <br>
+          <p><strong>UI Design</strong>: Create visually appealing UI designs that align with the brand identity, target audience, and project objectives. Pay attention to typography, color schemes, imagery, and visual elements to evoke the desired emotional response and enhance usability.</p>
+          <br>
+          <p><strong>Interaction Design</strong>: Design intuitive and responsive interactions that guide users through the interface seamlessly. Incorporate interactive elements such as buttons, forms, animations, and transitions to enhance engagement and usability.</p>
+          <br>
+          <p><strong>Prototyping and User Testing</strong>: Develop interactive prototypes to simulate user interactions and workflows. Conduct usability testing with real users to identify usability issues, gather feedback, and iterate on design improvements.</p>
+          <br>
+          <p><strong>Accessibility and Inclusivity</strong>: Ensure accessibility compliance by following WCAG guidelines and integrating inclusive design principles. Consider diverse user needs, including those with disabilities, to create accessible and inclusive experiences for all users.</p>
+          <br>
+          <p><strong>Cross-Platform Compatibility</strong>: Design UI/UX solutions that are compatible across multiple devices and platforms. Optimize designs for various screen sizes, resolutions, and input methods to provide a consistent and seamless experience across devices.</p>
+          <br>
+          <p><strong>Documentation and Handoff</strong>: Document design specifications, guidelines, and assets for handoff to developers and other stakeholders. Provide clear instructions and resources to facilitate smooth implementation and ensure design fidelity.</p>
+          <br>
+          <p><strong>Continuous Iteration and Improvement</strong>: Embrace a culture of continuous iteration and improvement by collecting user feedback, analyzing metrics, and iterating on design based on insights gained. Stay updated with industry trends and best practices to evolve designs and deliver exceptional user experiences.</p>
+        </div>
       </div>
     </section>
 

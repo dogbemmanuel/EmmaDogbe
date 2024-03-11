@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../CSS/index.css" />
 
     <!-- ======== CSS RESPONSIVENESS LINK ======== -->
-    <link rel="stylesheet" href="../CSS/responsiveness.css">
+    <link rel="stylesheet" href="../CSS/tabletresponsive.css">
+    <link rel="stylesheet" href="../CSS/mobileresponsive.css">
 
     <!-- FONT AWESOME ICON -->
     <script
@@ -223,15 +224,13 @@
               ></a>
               <div class="dropdown-content">
                 <a href="./aboutMe.html">About me & Bio</a>
-                <a href="./skillsExp.html">Skils & experiences</a>
+                <a href="./Experience.html" >Experience</a>
                 <a href="#service">Services</a>
                 <a href="./lifeGalery.html">Lifestyle & Galary </a>
               </div>
             </div>
             <div class="dropdown portfolios navbar_list">
-              <a href="#" class="white_text"
-                >Portfolio <i class="fa-solid fa-chevron-down Portfolio"></i
-              ></a>
+                    <a href="#" class="white_text"><button class="prtfo">Portfolio</button><i class="fa-solid fa-chevron-down Portfolio"></i></a>
               <div class="dropdown-content">
                 <a href="./aproach.html">Aproach to Projects</a>
                 <a href="./tools.html">Tools & Resources</a>
@@ -353,8 +352,23 @@
       /></a>
     </header>
 
+    <div class="wrapper ten">
+      <div>
+          <h3 class="bounce">
+              <span>W</span>
+              <span>E</span>
+              <span>L</span>
+              <span>L</span>
+              <span>C</span>
+              <span>O</span>
+              <span>M</span>
+              <span>E</span>
+          </h3>
+      </div>
+    </div>
+
     <section class="about_me_section">
-      <div class="about_me_intro" data-aos="zoom-in-up">
+      <div class="about_me_intro" data-aos="fade-left" data-aos-duration="1300">
         <div
           class="white_text about_work_anima"
           data-aos="zoom-in-up"
@@ -389,7 +403,7 @@
           ><button class="white_text about_read_more">Read More</button>
         </a>
         <a href="#"
-          ><button class="white_text about_read_more">Download CV</button>
+          >    <button class="cvButton">Download CV</button>
         </a>
       </div>
       <div class="about_img">
@@ -535,7 +549,7 @@
             data-aos-duration="1000"
           >
             <i class="fa-solid fa-people-group abiliti_icon"></i>
-            <h3 class="abiliti_Name white_text">Team Player</h3>
+            <h3 class="abiliti_Name black_text">Team Player</h3>
             <p class="abiliti_note">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Excepturi nihil quos, rem sequi reprehenderit ullam aliquam
@@ -547,7 +561,7 @@
             data-aos-duration="1300"
           >
             <i class="fa-solid fa-people-arrows abiliti_icon"></i>
-            <h3 class="abiliti_Name white_text">Communication</h3>
+            <h3 class="abiliti_Name black_text">Communication</h3>
             <p class="abiliti_note">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Excepturi nihil quos, rem sequi reprehenderit ullam aliquam
@@ -559,7 +573,7 @@
             data-aos-duration="1600"
           >
             <i class="fa-solid fa-square-poll-vertical abiliti_icon"></i>
-            <h3 class="abiliti_Name white_text">SEO</h3>
+            <h3 class="abiliti_Name black_text">SEO</h3>
             <p class="abiliti_note">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Excepturi nihil quos, rem sequi reprehenderit ullam aliquam
@@ -571,7 +585,7 @@
             data-aos-duration="1900"
           >
             <i class="fa-brands fa-searchengin abiliti_icon"></i>
-            <h3 class="abiliti_Name white_text">User Research</h3>
+            <h3 class="abiliti_Name black_text">User Research</h3>
             <p class="abiliti_note">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Excepturi nihil quos, rem sequi reprehenderit ullam aliquam
@@ -583,7 +597,7 @@
             data-aos-duration="2200"
           >
             <i class="fa-solid fa-square-check abiliti_icon"></i>
-            <h3 class="abiliti_Name white_text">Usability Testing</h3>
+            <h3 class="abiliti_Name black_text">Usability Testing</h3>
             <p class="abiliti_note">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Excepturi nihil quos, rem sequi reprehenderit ullam aliquam
@@ -595,7 +609,7 @@
             data-aos-duration="2500"
           >
             <i class="fa-solid fa-people-arrows abiliti_icon"></i>
-            <h3 class="abiliti_Name white_text">Team Player</h3>
+            <h3 class="abiliti_Name black_text">Team Player</h3>
             <p class="abiliti_note">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Excepturi nihil quos, rem sequi reprehenderit ullam aliquam
@@ -848,7 +862,7 @@
     <hr class="division" data-aos="fade-right" data-aos-duration="2000" />
 
     <section id="service" class="services_section">
-      <div class="service_header">
+      <div class="service_header" data-aos="fade-left" data-aos-duration="1300">
         <div class="service_title white_text">Services:</div>
         <p class="grey_text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quo autem
@@ -860,7 +874,7 @@
           laboriosam rem a accusamus quos commodi temporibus.
         </p>
       </div>
-      <div class="service_info">
+      <div class="service_info" data-aos="fade-right" data-aos-duration="1300">
         <div class="accordion-body">
           <div class="accordion white_text">
             <div class="container">

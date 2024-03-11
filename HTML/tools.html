@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../CSS/otherPage.css" />
 
     <!-- ======== CSS RESPONSIVENESS LINK ======== -->
-    <link rel="stylesheet" href="../CSS/responsiveness.css" />
+    <link rel="stylesheet" href="../CSS/tabletresponsive.css">
+    <link rel="stylesheet" href="../CSS/mobileresponsive.css">
 
     <!-- FONT AWESOME ICON -->
     <script
@@ -33,7 +34,7 @@
   </head>
   <body>
     <!-- NAVBAR SECTION STARTS HERE -->
-    <header class="about_landingPage">
+    <header class="about_landingPage" id="home">
       <nav class="othePageNavbar" id="othePageNavbar">
         <a href="./index.html">
           <img
@@ -59,15 +60,13 @@
             ></a>
             <div class="dropdown-content">
               <a href="./aboutMe.html">About me & Bio</a>
-              <a href="./skillsExp.html">Skils & experiences</a>
+              <a href="./Experience.html">Experiences</a>
               <a href="#service">Services</a>
               <a href="./lifeGalery.html">Lifestyle & Galary </a>
             </div>
           </div>
           <div class="dropdown portfolios navbar_list">
-            <a href="#" class="white_text"
-              >Portfolio <i class="fa-solid fa-chevron-down Portfolio"></i
-            ></a>
+            <a href="#" class="white_text"><button class="prtfo">Portfolio</button><i class="fa-solid fa-chevron-down Portfolio"></i></a>
             <div class="dropdown-content">
               <a href="./aproach.html">Aproach to Projects</a>
               <a href="./tools.html">Tools & Resources</a>
@@ -96,51 +95,10 @@
     /></a>
 
 
+    <section class="toolsSection">
+      
 
-    <section class="aboutPage">
-      <div class="aboutmePage">Hello <br>
-        If the navbar toggle is working on the home page but not on the about page, there could be several reasons for this issue. Here are a few potential causes to investigate:
-
-JavaScript Conflicts: Check for any JavaScript errors in the browser console that might be preventing the toggle functionality from working on the about page. Make sure that there are no conflicting JavaScript functions or libraries being loaded that could interfere with the toggle functionality.
-
-HTML Structure: Ensure that the HTML structure of the navbar toggle and the associated JavaScript code is consistent on both the home page and the about page. There might be differences in the HTML structure or class names that are preventing the toggle from functioning properly on the about page.
-
-CSS Styling: Verify that the CSS styles applied to the navbar toggle are consistent across both pages. Sometimes, conflicting CSS styles or missing styles could cause the toggle to appear broken or non-functional on certain pages.
-
-Page Loading Issues: Check if all the necessary JavaScript and CSS files are properly loaded on the about page. Sometimes, if a file fails to load or is loaded out of order, it can affect the functionality of components on the page, including the navbar toggle.
-
-Conditional Logic: If the navbar toggle functionality is implemented using JavaScript with conditional logic based on the current page URL, ensure that the logic is correctly implemented and that it properly identifies the about page.
-
-Event Binding: Double-check that the event binding for the navbar toggle is correctly set up on the about page. If the event is not properly bound or if there are any issues with event delegation, it could prevent the toggle from working as expected.
-
-By thoroughly investigating these potential causes, you should be able to identify and resolve the issue with the navbar toggle not working on the about page.
-
-User
-These are the errors.
-A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
-ChatGPT
-
-The error message you provided suggests that there might be an issue with asynchronous event handling or communication between different parts of your code. Here are a few steps you can take to address this problem:
-
-Check Event Listeners: Review the code that handles the navbar toggle functionality and ensure that event listeners are properly set up. Make sure that the event listeners are added after the DOM has fully loaded to avoid any issues with accessing DOM elements that haven't been created yet.
-
-Asynchronous Requests: If your navbar toggle functionality involves making asynchronous requests (e.g., AJAX calls), ensure that the requests are properly handled and that appropriate error handling is implemented to deal with any issues that may arise during the request process.
-
-Debugging Tools: Utilize browser developer tools (such as Chrome DevTools or Firefox Developer Tools) to debug your JavaScript code. Use breakpoints, console logging, and other debugging techniques to trace the flow of execution and identify any potential issues with asynchronous operations.
-
-Cross-Origin Requests: If your code involves making cross-origin requests (requests to a different domain), ensure that the server's CORS (Cross-Origin Resource Sharing) policy allows the requests to be made from your web page. Check the browser's console for any CORS-related errors that may be causing the issue.
-
-Testing Environment: Make sure that your code is running in a consistent and stable environment. Test your code on different browsers and devices to see if the issue is specific to certain environments.
-
-By following these steps and carefully examining your code, you should be able to identify and resolve the issue with the asynchronous response error.
-
-
-
-
-
-      </div>
     </section>
-
 
 
     <section id="contact" class="contact_section">

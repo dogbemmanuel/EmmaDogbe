@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
 
 * {
   margin: 0;
@@ -28,7 +31,6 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: var(--cantarell-font);
   scroll-behavior: smooth;
 }
 
@@ -40,6 +42,7 @@ body {
   background-image: radial-gradient(#1e1f41 2px, transparent 2px);
   background-size: 32px 32px;
   background-color: var(--primary-color);
+  font-family: var(--cantarell-font);
   /* background-color: #272E43; */
   /* background-color: black; */
 
@@ -461,6 +464,32 @@ button {
   
 } 
 
+.prtfo {
+  background:#0b63bb;
+  color:#fff;
+  border:1px solid #0b63bb;
+  padding: 0.7rem 2rem;
+  margin-right: 5px;
+  border-radius:2rem;
+  font-size:1rem;
+  box-shadow: 0 0 0 0 rgba(88, 120, 243, 0.4);
+  -moz-animation: pulse 2s infinite;
+  -webkit-animation: pulse 2s infinite;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+      0% {
+          box-shadow: 0 0 0 0 rgba(88, 120, 243, 1);
+      }
+      70% {
+          box-shadow: 0 0 0 10px rgba(88, 120, 243, 0);
+      }
+      100% {
+          box-shadow: 0 0 0 50px rgba(88, 120, 243, 0);
+      }
+  }
 
 /* Hamburger menu styles */
 
@@ -592,6 +621,60 @@ button {
 
 
 
+/* =====================WELCOME================== */
+.wrapper.ten {
+  background-color: #0e2839;
+}
+.bounce {
+  font-size: 7rem;
+  width: 100%;
+  margin: auto;
+  display: inline-flex;
+  justify-content: center;
+  /* -webkit-box-reflect: below -20px linear-gradient(transparent, #211e1e2e); */
+}
+.bounce span {
+  display: inline-flex;
+  color: #c7f4ff;
+  font-family: "Play", sans-serif;
+  animation: bounce 1s infinite;
+}
+@keyframes bounce {
+  0%,
+  50%,
+  100% {
+      transform: translateY(0);
+  }
+  25% {
+      transform: translateY(-20px);
+  }
+}
+.ten span:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+.ten span:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+.ten span:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+.ten span:nth-of-type(4) {
+  animation-delay: 0.4s;
+}
+.ten span:nth-of-type(5) {
+  animation-delay: 0.5s;
+}
+.ten span:nth-of-type(6) {
+  animation-delay: 0.6s;
+}
+.ten span:nth-of-type(7) {
+  animation-delay: 0.7s;
+}
+
+
+
+
+
 /*=================START OF THE ABOUT ME SECTION====================*/
 
 .about_me_section {
@@ -653,6 +736,34 @@ button {
 .about_read_more:hover {
   transform: scalex(1.1);
 }
+
+
+/* Download CV */
+.cvButton{
+  background:#0b63bb;
+  color:#fff;
+  border:1px solid #0b63bb;
+  padding:1rem 2rem;
+  border-radius:2rem;
+  font-size:1rem;
+  box-shadow: 0 0 0 0 rgba(88, 120, 243, 0.4);
+  -moz-animation: pulse 2s infinite;
+  -webkit-animation: pulse 2s infinite;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+      0% {
+          box-shadow: 0 0 0 0 rgba(88, 120, 243, 1);
+      }
+      70% {
+          box-shadow: 0 0 0 10px rgba(88, 120, 243, 0);
+      }
+      100% {
+          box-shadow: 0 0 0 50px rgba(88, 120, 243, 0);
+      }
+  }
 
 .text-animation {
   font-size: 5rem;
@@ -1442,161 +1553,6 @@ footer{
   padding-bottom: 30px;
 }
 
+/* ================END OF LANDING PAGE CSS=============== */
 
-
-
-/* ==============ABOUT PAGE============= */
-.about_body{
-  background-color: var(--secondary-color) !important;
-  background-image: none  !important;
-  background-size: none !important;
-}
-
-
-.theAboutPage{
-  height:100vh;
-  width:100%;
-  /* position:absolute ;   */
-  background:radial-gradient(#333,#000);
-  overflow: hidden;
-  border-radius: 20px;
-  box-shadow: 0 0 60px rgba(0,0,0,.6);
-  }
-
-  .leaf{
-      position:absolute ;
-      width:100%;
-      height:100%;
-      top:0;
-      left:0;
-  }
-  .leaf div{
-  position:absolute ;
-  display:block ;
-  }
-  .leaf div:nth-child(1){
-      left:20%; 
-      animation:fall 15s linear infinite ;
-      animation-delay:-2s;
-  
-  }
-  .leaf div:nth-child(2){
-      left:70%; 
-      animation:fall 15s linear infinite ;
-      animation-delay:-4s;
-  }
-  .leaf div:nth-child(3){
-      left:10%; 
-      animation:fall 20s linear infinite ;
-      animation-delay:-7s;
-      
-  }
-  .leaf div:nth-child(4){
-      left:50%; 
-     animation:fall 18s linear infinite ; 
-     animation-delay:-5s;
-  }
-  .leaf div:nth-child(5){
-      left:85%; 
-      animation:fall 14s linear infinite ;
-      animation-delay:-5s;
-  }
-  .leaf div:nth-child(6){
-      left:15%; 
-      animation:fall 16s linear infinite ;
-      animation-delay:-10s;
-  }
-  .leaf div:nth-child(7){
-      left:90%; 
-      animation:fall 15s linear infinite ;
-      animation-delay:-4s;
-  }
-  
-  @keyframes fall{
-      0%{
-          opacity:1;
-          top:-10%;
-          transform:translateX (20px) rotate(0deg);
-      }
-      20%{
-          opacity:0.8;
-          transform:translateX (-20px) rotate(45deg);
-      }
-      40%{
-  
-          transform:translateX (-20px) rotate(90deg);
-      }
-      60%{
-          
-         transform:translateX (-20px) rotate(135deg); 
-      }
-      80%{
-      
-          transform:translateX (-20px) rotate(180deg);
-      }
-      100%{
-          
-          top:110%;
-          transform:translateX (-20px) rotate(225deg);
-      }
-      }
-  .leaf1{
-      transform: rotateX(180deg);
-  }
-
-  .my_name{
-      position:absolute ;
-      top:40%;
-      width:100%;
-      font-family: 'Courgette', cursive;
-      font-size:4rem;
-      text-align:center;
-      transform:translate ;
-      color:#fff;
-      transform:translateY (-50%);
-  }
-
-
-  .about_section_container{
-    width: 70%;
-    margin: 4% auto;
-  }
-
-  /* .profileContainer{
-    margin: 4% 10%;
-  }
-   */
-  #profileText{
-    font-size: 1.2rem;
-  }
-  
-  #prifileName{
-    font-size: 1.4rem;
-    font-weight: 700;
-  }
-  
-  .profileContainer p::first-letter {
-    color: var(--accent-color) !important;
-    padding: 0 .2rem;
-    margin: 0 .2rem 0 0;
-    font-family: "IBM Plex Mono", monospace;
-  
-    font-size: 8rem;
-    float: left;
-    line-height: 0.8;
-  }
-
-  .aboutPageImg{
-    /* background-color: var(--secondary-color); */
-    width: 35%;
-    max-width: 50%;
-    float: right;
-    margin: 2% 0 2% 2%;
-    box-shadow: 0 0 60px rgba(0,0,0,.4);
-  }
-  
-
-  /*================SKILLS===================*/
-
-  
 

@@ -1,0 +1,534 @@
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+ 
+}
+
+:root {
+  --primary-color: #272E43;
+  --secondary-color: rgb(233, 255, 249);
+  --accent-color: #3AFFFD;
+  --grey_color: rgb(185, 189, 190);
+  --cantarell-font: "Cantarell", sans-serif;
+  --second-font: "Georgia", "Times New Roman", "Times", "serif";
+  --light-font: 400;
+  --bold-font: 700;
+  --font-style-normal: "normal";
+  --font-style-italic: "italic";
+  --very-small-font-size: 0.9rem;
+  --mid-font-size: 1.5rem;
+  --large-font-size: 5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-image: radial-gradient(#1e1f41 2px, transparent 2px);
+  background-size: 32px 32px;
+  background-color: var(--primary-color);
+  font-family: var(--cantarell-font);
+  /* background-color: #272E43; */
+  /* background-color: black; */
+
+}
+
+p{
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.bold_text {
+  font-weight: var(--bold-font);
+}
+
+i {
+  color: var(--accent-color);
+}
+
+hr.division{
+  border: 4px dashed var(--accent-color);
+}
+
+
+.white_text {
+  color: var(--secondary-color);
+}
+
+.green_text {
+  color: var(--accent-color);
+}
+
+.black_text {
+  color: var(--primary-color);
+}
+
+.grey_text {
+  color: var(--grey_color);
+}
+
+
+/*======== MEDIA QUERY FOR FOR IPAD ==========*/
+
+@media screen and (max-width: 835px) {
+
+
+  /* ============LANDING PAGE================== */
+
+
+  .landing_page{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+
+  /* ============LANDING PAGE LEFT================== */
+
+  .landingpage_left {
+    background-color: var(--primary-color);
+    position: relative;
+    /* display: inline-block; */
+    /* padding-top: 15%; */
+    /* border: none; */
+    z-index: 1;
+    /* transform: translateY(-180px); */
+    padding:  5% 5% !important;
+    width: auto;
+    
+  }
+
+
+  /* ============END OF LANDING PAGE LEFT================== */
+
+
+  /* =============SOCIALS AND TEST================== */
+
+
+.socials_and_text{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0 !important;
+}
+
+
+.socials{
+    display: inline;
+}
+
+.icons{
+    padding-right: 10px;
+}
+
+.read_more_button{
+  height: 40px;
+  margin: 20px 0;
+}
+
+.process {
+    display: none;
+}
+
+
+  /* ============LANDING PAGE RIGHT================== */
+
+.landingpage_right{
+  width: auto;
+  margin-bottom: -35%;
+  /* margin-bottom: auto; */
+  /* z-index:unset; */
+}
+
+#mobile_logo{
+  /* margin-left: 20px;
+  display: flex !important;
+  left: 0 !important;
+  justify-content: flex-start !important; */
+  display: block;
+  margin-left: 20px;
+}
+
+  /* =============NAVBAR BACKROUND============ */
+
+  
+  .navbar {
+    height: 10vh;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+
+  
+  .img_and_animate {
+    margin: auto;
+    padding-right: 0;
+    top: 40%;
+  }
+
+  /* .mySlides{
+    margin-top: -30%;
+  } */
+
+  .scroll_down_arrow, .scroll_down, #logo{
+    display: none;
+  }
+
+  #dev_process{
+    display: none !important;
+  }
+  
+  .navbar_links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    padding-top: 100px;
+    padding-left: 80px;
+    height: 100vh;
+    position: fixed;
+    /* padding-bottom: 100px; */
+    line-height: 50px;
+    /* z-index: -5; */
+    /* transition: all .9s ease-in-out; */
+  }
+  
+    .navbar_links a {
+      margin-bottom: 10px;
+    }
+
+    .prtfo{
+      color: var(--secondary-color);
+      animation: none;
+      background: var(--primary-color);
+      border: none;
+      padding: 2px;
+      font-size: 16px;
+      margin-right: 2px !important;
+    }
+
+
+  
+  
+  .dropdown-content a{
+      display: flex;
+      flex-direction: column;
+      padding-left: 30px;
+      line-height: 30px;
+      /* padding-left: 50px; */
+      text-align: start;
+      color: var(--grey_color);
+      font-size: var(--very-small-font-size);
+  }
+
+
+  .navbar-toggle {
+    font-size: 40px;
+    display: block;
+  }
+
+  /* =============NAVBAR BACKROUND============ */
+
+
+
+
+
+/*===============Dropdown Content (Hidden by Default)===================*/
+
+/* .img_and_animate{
+  top: 50%;
+} */
+
+.img {
+  max-width: 70%;
+}
+
+.dot-container{
+  padding-bottom: 5%;
+}
+
+
+#dev_process {
+  padding: 12px 30px;
+  background: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  color: var(--primary-color);
+  transition: 0.5s;
+}
+
+
+/*===============WELCOME============= */
+.bounce {
+  font-size: 5rem;
+  padding: 3% 0;
+}
+
+  /* ============ABOUT ME SECTION================== */
+
+  .about_work_anima, .text-animation{
+    font-size: 2.5rem;
+  }
+
+
+  .vertical_line {
+    height: 760px;
+  }
+
+
+
+/* ===============ABILITIES================ */
+.abilities_container{
+  padding: 4% 5%;
+  /* width: 100%; */
+  /* position: relative; */
+  /* align-items: center; */
+
+}
+
+.abilities_list{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Displaying three columns by default */
+  gap: 10px;
+}
+
+.abiliti_items{
+  margin-bottom: 5%;
+}
+
+.abiliti_icon{
+  font-size: 40px;
+}
+
+
+
+/*=================EXPERIENCE==================*/
+
+.work_flex{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0 !important;
+
+}
+.work_img{
+  display: none;
+}
+
+/* ================COUNTER=================== */
+.counter_section, .counter_container{
+  height: 80vh;
+}
+
+.counter_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter_content{
+  padding-bottom: 3%;
+}
+
+
+.num_icon{
+  font-size: 30px;
+  padding: 30px;
+}
+
+
+/*=================SERVICE ACCORDIAN=================*/
+
+.accordion .container.active .content {
+  height: 230px;
+}
+
+/* ===============CONTACT================= */
+
+.title-left, .title-right{
+  margin-bottom: 25px;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.lead{
+  font-size: 16px;
+}
+
+.email_whatsapp{
+  width: 90%;
+  display: block;
+}
+.contact_socials{
+  display: flex;
+  /* transform: translate(-10%, 46%); */
+}
+
+.contact_socials_icons{
+  font-size: 19px;
+  color: #1e1f41;
+  padding: 12px;
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+
+/* ===================FOOTER================= */
+
+  .footer{
+    height: 20vh;
+  }
+
+  .footer_brand{
+    display: none;
+  }
+  .footer_brand_ipad{
+    font-size: 1rem;
+    display: block;
+  }
+
+  .footer_container{
+    width: 100%;
+    padding: 0 2%;
+  }
+
+
+
+  /* ===================ABOUT PAGE================== */
+.my_name{
+  font-size:3rem;
+}
+
+.leaf{
+  height:80%;
+}
+
+.about_section_container{
+  width: 80%;
+}
+
+/* =================EXPERIENCE PAGE============== */
+.expContainer{
+  position: relative;
+  height: 40vh;
+}
+
+.expePageContent{
+  width: 90%;
+}
+
+.expPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  
+}
+
+.expvertical{
+  display: none;
+}
+
+.expContent{
+  width: auto;
+}
+
+.expContent img{
+  width: 100%;
+}
+
+
+
+.expPagei{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 5%;
+  
+}
+
+.otherRolls{
+  width: 90%;
+}
+
+.otherResponCard{
+  margin: 5px;
+  padding: 4%;
+}
+
+
+/* ====================APPROACH================== */
+#approach1, #approach2 {
+  background: none ;
+  box-shadow: none;
+}
+
+.approachContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align:justify;
+  align-items: center;
+  /* position: relative;  */
+  margin: 0 auto; 
+}
+
+.approachContainer h1{
+  font-size: 3rem;
+}
+
+.rotate span {
+  font-size: 3rem;
+}
+
+}
+
+
+
+
+
+
+
+
+/* =====================MIDIUM RESPONSIVENESS====================== */
+
+
+@media screen and (max-width: 768px) {
+  .navbar_links {
+    line-height: 40px;
+
+}
+  .vertical_line {
+    height: 800px;
+    }
+
+}
+
+
+
+

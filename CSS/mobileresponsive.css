@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+ 
+}
+
+:root {
+  --primary-color: #272E43;
+  --secondary-color: rgb(233, 255, 249);
+  --accent-color: #3AFFFD;
+  --grey_color: rgb(185, 189, 190);
+  --cantarell-font: "Cantarell", sans-serif;
+  --second-font: "Georgia", "Times New Roman", "Times", "serif";
+  --light-font: 400;
+  --bold-font: 700;
+  --font-style-normal: "normal";
+  --font-style-italic: "italic";
+  --very-small-font-size: 0.9rem;
+  --mid-font-size: 1.5rem;
+  --large-font-size: 5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-image: radial-gradient(#1e1f41 2px, transparent 2px);
+  background-size: 32px 32px;
+  background-color: var(--primary-color);
+  font-family: var(--cantarell-font);
+  /* background-color: #272E43; */
+  /* background-color: black; */
+
+}
+
+p{
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.bold_text {
+  font-weight: var(--bold-font);
+}
+
+i {
+  color: var(--accent-color);
+}
+
+hr.division{
+  border: 4px dashed var(--accent-color);
+}
+
+
+.white_text {
+  color: var(--secondary-color);
+}
+
+.green_text {
+  color: var(--accent-color);
+}
+
+.black_text {
+  color: var(--primary-color);
+}
+
+.grey_text {
+  color: var(--grey_color);
+}
+
+
+
+/* =====================MOBILE RESPONSIVENESS====================== */
+
+@media screen and (max-width: 430px) {
+
+    .landing_page{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  
+    .landingpage_left {
+      background-color: var(--primary-color);
+      position: relative;
+      /* display: inline-block; */
+      /* padding-top: 15%; */
+      /* border: none; */
+      z-index: 2;
+      /* transform: translateY(-180px); */
+      width: 100%;
+      
+    }
+  
+  
+    #logo{
+      display: none;
+    }
+  
+  
+    .landingpage_right{
+      width: 100%;
+      margin-bottom: -50%;
+      z-index:unset
+    }
+  
+    #mobile_logo{
+      display: block;
+      max-width:  40%;
+  
+    }
+  
+    .navbar {
+      height: 10vh;
+      }
+  
+  
+    .navbar_links {
+      width: 100%;
+      margin-top: 0;
+      top: 0;
+      position: fixed;
+      padding-top: 80px !important;
+      padding-left: 80px;
+      padding-bottom: 100px;
+      line-height: 25px;
+      /* z-index: 100; */
+    }
+  
+    .dropdown-content a{
+      line-height: 25px;
+  }
+  
+  
+  
+    .navbar-toggle {
+      font-size: 30px;
+    }
+    
+    .img_and_animate {
+      margin: auto;
+      padding-right: 0;
+    }
+  
+  
+    .dot {
+      height: 10px;
+      width: 10px;
+    }
+  
+    .scroll_down_arrow, .scroll_down{
+      display: none;
+    }
+  
+    #dev_process{
+      display: none;
+    }
+    
+
+  /* ===================WELCOME================= */
+  .bounce {
+    font-size: 3rem;
+    padding: 3% 0;
+  }
+  
+  
+  
+  
+  /* =================ABOUT SECTION================= */
+  .about_me_section{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 4%;
+  }
+  
+  .me_img, .about_me_intro{
+    width: auto;
+    margin: auto;
+   
+  }
+  
+  .about_work_anima {
+    font-size: 2rem;
+  }
+  
+  .text-animation {
+    font-size: 3rem;
+  }
+  
+  /* ===============SKILLS=============== */
+  
+    .skills_flex{
+      display: block;
+    }
+  
+    .skills, .skill_items{
+      width: auto;
+  
+    }
+  
+    .skills_line{
+      display: none;
+    }
+  
+  
+    /* ==============ABILITY=============== */
+  
+    .abilities_container{
+      padding: 4% 10%;
+      /* width: 100%; */
+      /* position: relative; */
+      /* align-items: center; */
+    
+    }
+  
+  
+    .abilities_list{
+      display: grid;
+      grid-template-columns: repeat(1, auto); /* Adjust the number of columns as needed */
+      gap: 10px;
+      justify-content: center; /* Centers items horizontally */
+      align-items: center; /* Centers items vertically */
+    }
+  
+  
+    .abiliti_icon{
+      font-size: 20px;
+      padding: 20px;
+    }
+  
+  
+    /*================WORK EXPERIENCE====================*/
+  
+  
+  .experience_section{
+    margin: 10px;
+    padding: 4%;
+    box-shadow: 0 0 60px rgba(0,0,0,.4);
+  }
+  
+  .work_flex{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .work_img{
+    display: none;
+  }
+  
+  
+  /* =================SERVICE=============== */
+  
+  .services_section{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: auto;
+  }
+  
+  .service_info{
+    max-width: 100%;
+    padding-top: 5%;
+  }
+  
+  /* .service_info{
+    width: 100%;
+  } */
+  
+  
+  /* .work_img:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), var(--primary-color));
+  } */
+  
+  /* ================TESTIMONIALS============== */
+  .test_items{
+    width: 90%;
+  }
+  .test_img{
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* =================CONTACT================= */
+  
+  .contact_section{
+    display: block;
+  }
+  
+  .contact_info{
+    width: auto;
+    margin-top: 10%;
+  }
+  
+  .contact_socials{
+   justify-content: center;
+  }
+  
+  
+  /* =================FOOTER================ */
+  .footer{
+    height: 35vh;
+  }
+  
+  
+  .footer_brand_ipad{
+    font-size: 0.6rem;
+  }
+  
+  .footer_container{
+    display: block;
+    text-align: center;
+  }
+  
+  .flex_middle{
+    padding-bottom: 5%;
+    line-height: 65px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  
+  /* ===================ABOUT ME PAGE ON SCREEN================== */
+  .my_name{
+    font-size:2rem;
+    overflow: hidden;
+  }
+  
+  .about_section_container{
+    width: 85%;
+  }
+  
+  /* ==============EXPERIENCE PAGE============= */
+  .expContainer{
+    height: 55vh;
+  }
+
+  .expContent{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .expIcon{
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .pageTitle h1, .pageTitleforApproach h1{
+    font-size: 1.4rem;
+  }
+  
+
+
+  /* =================APPROACH  PAGE=============== */
+  .pageTitleforApproach h1{
+    font-size: 1.2rem;
+    font-family: var(--cantarell-font);
+  }
+
+  .approachContainer h1{
+    font-size: 2rem;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .contentForApproach h2{
+    font-size: 1.4rem;
+  }
+  
+  .rotate span {
+    font-size: 1.2rem;
+  }
+}
+  
